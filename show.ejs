@@ -1,0 +1,22 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <h3> Place details </h3>
+    <div class="card" style="width: 18rem;">
+        <img src="<%=place3.image%>" class="card-img-top image" alt="...">
+        <div class="card-body">
+          <p class="card-text"><%=place3.title %></p>
+        </div>
+      </div>
+    <ul>
+        <li><%=place3.title%></li>
+        <li><%= place3.description%></li>
+        <li>₹<%=place3.price.toLocaleString("en-IN") %></li>
+        <li><%=place3.location %></li>
+        <li><%=place3.country %></li>
+    </ul>
+    <a href="/place/<%=place3._id%>/edit">Edit this place</a>
+    <form method="POST" action="/place/<%=place3._id%>?_method=DELETE">
+        <button class="delbtn">Delete this place</button>
+    </form>
+</body>
+

@@ -1,0 +1,54 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <h1>Creating new place</h1>
+    <form method="post" action="/place" novalidate class="needs-validation">
+        <div>
+       <label for="form" class="form-1 mb-1">Enter title</label>
+    <input placeholder="title" name="place[title]" type="text" class="form-control " id="form" required />
+    <div class="valid-feedback mb-3">
+        Looks good!
+      </div>
+</div>
+<div>
+    <label for="form-2" class="form-1 mb-1">Enter description</label>
+
+    <input placeholder="description" name="place[description]" type="text" class="form-control " id="form-2" required/>
+    <div class="invalid-feedback mb-3">
+        please enter description
+      </div>
+</div>
+<div>
+    <label for="form-6" class="form-1 mb-1">Image URl</label>
+    <input placeholder="image url" name="place[image]" type="text" class="form-control" id="form-6"/>
+    <div class="invalid-feedback mb-3">
+        please enter image-url
+      </div>
+</div>
+<div>
+    <label for="form-3" class="form-1 mb-1">Price</label>
+    <input placeholder="price" name="place[price]"   class="form-control" id="form-3" required/>
+    <div class="invalid-feedback mb-3">
+        please enter price
+      </div>
+</div>
+<div>
+    <label for="form-4" class="form-1 mb-1">Location</label>
+    <input placeholder="location" name="place[location]" type="text" class="form-control " id="form-4" required/>
+    <div class="invalid-feedback mb-3">
+        please enter valid location
+      </div>
+      <div class="valid-feedback mb-3">
+       location looks-good
+      </div>
+</div>
+<div>
+    <label for="form-5" class="form-1 mb-1">Country</label>
+    <input placeholder="country" name="place[country]" type="text" class="form-control " id="form-5" required/>
+    <div class="invalid-feedback mb-3">
+        please enter valid country
+      </div>
+</div>
+
+        <button class="newbtn">Submit</button>
+    </form>
+</body>

@@ -1,0 +1,30 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <h1>All Places</h1>
+    <!-- <form method="GET" action="/place/new">
+        <button>New Create</button>
+    </form> -->
+    <div class="row row-clos-lg-3 row-cols-md-3 row-cols-sm-1">
+      <% for(let place of allPlace){%>
+    
+        <div class="card col" >
+          <a href="/place/<%=place._id %>" class="place-link">
+            <div class="card-img-overlay"></div>
+
+          <img src="<%= place.image %>" class="card-img-top" alt="..."style="height: 20rem;">
+          <div class="card-body">
+            <p class="card-text">
+              <%=place.title %>
+              <br>
+              ₹<%= place.price ? place.price.toLocaleString("en-IN") : 'N/A' %> /day
+            </p>
+          </div>
+        </a>
+        </div>
+        <%}%>
+    </div>
+    
+    
+</body>
+
+

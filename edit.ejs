@@ -1,0 +1,52 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+    <h1>Edit Your Place</h1>
+    <form method="POST" action="/place/<%= place4._id %>?_method=PUT" novalidate class="needs-validation">
+        <div>
+        <label for="title1">Enter title</label> 
+    <input  placeholder="title" value="<%=place4.title%>" name="place[title]" type="text" id="title1" class="form-control " required/>
+    <div class="valid-feedback mb-3">
+        Title Looks good!
+    </div>
+</div>
+<div>
+   <label for="des1">Enter descriptiom</label>
+    <textarea rows="10" cols="35" placeholder="description" name="place[description]" type="text" id="des1" class="form-control" required><%=place4.description %></textarea>
+    <div class="invalid-feedback mb-3">
+       please enter description 
+    </div>
+</div>
+<div>
+    <label for="imageurl1">Enter image url</label>
+    <input  placeholder="image url" value="<%=place4.image%>" name="place[image]" type="text" id="imageurl1" class="form-control "/>
+    <div class="invalid-feedback mb-3">
+        please enter image-url
+     </div>
+</div>
+<div>
+    <label for="price1">Price</label>
+    <input placeholder="price" value="<%=place4.price %>" name="place[price]" type="number" class="form-control " id="price1" required/>
+    <div class="invalid-feedback mb-3">
+        please enter price
+     </div>
+</div>
+<div>
+    <label for="location1">Enter image url</label>
+    <input placeholder="location" value="<%=place4.location %>" name="place[location]" type="text" class="form-control " id="location1" required/>
+    <div class="invalid-feedback mb-3">
+        please enter location
+     </div>
+</div>
+<div>
+    <label for="country1">Enter image url</label>
+    <input placeholder="country" value="<%=place4.country %>" name="place[country]" type="text" class="form-control " id="country1" required/>
+    <div class="invalid-feedback mb-3">
+        please enter country
+     </div>
+</div>
+    <br><br>
+
+        <button class="editbtn">Submit</button>
+    </form>
+    <script src="/js/script.js"></script>
+</body>

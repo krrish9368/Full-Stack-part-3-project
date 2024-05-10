@@ -1,0 +1,183 @@
+body{
+    background-color: yellowgreen;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+
+}
+.navbar-brand span{
+    background-color: green;
+    color: white;
+    padding: 0.55rem;
+    border-radius: 50%;
+}
+.nav-link{
+    color: green !important;
+    margin-left: 2rem;
+}
+.footer-info-full{
+    background-color: black;
+    height: 10rem;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.footer-info{
+    
+    display: flex;
+    align-items: center;
+   
+}
+.footer-info i{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.footer-copy{
+    color: white;
+    margin-left: 47rem;
+   
+}
+.footer-copy h4{
+    font-size: 1.3rem;
+
+}
+.footer-copy p{
+    margin-left: 8rem;
+}
+/* cards */
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-body p{
+    color: black;
+}
+.card-text p{
+    text-decoration: none;
+}
+.place-link{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    background-color: white;
+    opacity: 0.2;
+}
+
+.newbtn{
+    height: 3rem;
+    width: 20vw;
+    margin-bottom: 3rem;
+    color: white;
+    background-color: green;
+    border-radius: 2rem;
+    border: none;
+}
+.editbtn{
+    height: 3rem;
+    width: 20vw;
+    margin-bottom: 3rem;
+    color: white;
+    background-color: green;
+    border-radius: 2rem;
+    border: none;
+}
+.image{
+    height: 20rem !important;
+    width: 90vw !important;
+   background-size: cover !important;
+}
+.delbtn{
+    height: 3rem;
+    width: 20vw;
+    margin-bottom: 3rem;
+    color: white;
+    background-color: green;
+    border-radius: 2rem;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
